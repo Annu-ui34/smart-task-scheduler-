@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>Add Task</title>
+
+</head>
+
+<body>
+
+<h2>Add Task</h2>
+
+<form
+th:action="@{/tasks/save}"
+th:object="${task}"
+method="post">
+
+Title
+
+<br>
+
+<input
+type="text"
+th:field="*{title}">
+
+<br><br>
+
+Description
+
+<br>
+
+<textarea
+th:field="*{description}">
+</textarea>
+
+<br><br>
+
+Priority
+
+<br>
+
+<input
+type="text"
+th:field="*{priority}">
+
+<br><br>
+
+Status
+
+<br>
+
+<input
+type="text"
+th:field="*{status}">
+
+<br><br>
+
+<button type="submit">
+
+Save Task
+
+</button>
+
+</form>
+
+</body>
+</html>

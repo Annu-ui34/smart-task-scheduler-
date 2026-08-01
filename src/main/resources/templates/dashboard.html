@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Smart Task Scheduler</h1>
+
+</header>
+
+<nav>
+
+<a th:href="@{/}">Home</a>
+
+<a th:href="@{/users}">Users</a>
+
+<a th:href="@{/categories}">Categories</a>
+
+<a th:href="@{/tasks}">Tasks</a>
+
+</nav>
+
+<div class="container">
+
+<h2>Dashboard</h2>
+
+<p>
+
+Welcome to Smart Task Scheduler & Workflow Automation Engine.
+
+</p>
+
+<h3>Available Modules</h3>
+
+<ul>
+
+<li>User Management</li>
+
+<li>Task Management</li>
+
+<li>Category Management</li>
+
+<li>Reports</li>
+
+<li>Workflow Automation</li>
+
+<li>Activity Logs</li>
+
+</ul>
+
+</div>
+
+</body>
+
+</html>
